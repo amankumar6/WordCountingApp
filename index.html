@@ -4,18 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="img/icon.png" type="image/x-icon">
     <title>WORD COUNTING APP</title>
 </head>
 
 <body>
-    
+
     <div class="border">
-        <div class="container">
+        <div class="container_wc">
             <h1>WORD COUNTING APP</h1>
-            <textarea placeholder="Start Typing..." id="txt-area"></textarea>
+            <div class="row">
+                <div class="input-field col s12">
+                    <textarea id="txt-area" class="materialize-textarea"></textarea>
+                    <label for="textarea1" class="active">Let's Go</label>
+                </div>
+            </div>
             <div class="output row">
                 <div>Total Words: <span id="wordCount">0</span></div>
             </div>
