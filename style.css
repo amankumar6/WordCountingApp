@@ -5,7 +5,6 @@
 
 html {
     box-sizing: border-box;
-    
 }
 
 *,
@@ -16,7 +15,6 @@ html {
 
 body {
     background: linear-gradient(to top, #9796f0, #fbc7d4);
-   
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -26,11 +24,10 @@ body {
 
 }
 
-.border
-{
+.border {
     width: 720px;
     margin: 5% auto;
-	background: linear-gradient(-45deg,#fb0094,#0000ff,#00ff00,#ffff00,#ff0000,#fb0094,#0000ff,#00ff00,#ffff00,#ff0000);
+    background: linear-gradient(-45deg, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000);
     overflow: hidden;
     background-size: 400% 400%;
     position: relative;
@@ -38,21 +35,21 @@ body {
     border-radius: 10px;
     box-shadow: 10px 10px 97px rgb(230, 230, 230);
 }
-@keyframes change
-{
-    0%
-    {
+
+@keyframes change {
+    0% {
         background-position: 0 50%;
     }
-    50%
-    {
+
+    50% {
         background-position: 100% 50%;
     }
-    100%
-    {
+
+    100% {
         background-position: 0 50%;
     }
 }
+
 .container {
 
     margin: 4px;
@@ -81,10 +78,10 @@ textarea {
     line-height: 1.5rem;
     border-radius: 5px;
 }
-textarea::placeholder
-{
+
+textarea::placeholder {
     font-size: 16px;
-    color: rgba(128, 128, 128,0.8);
+    color: rgba(128, 128, 128, 0.8);
 }
 
 textarea:hover {
@@ -117,26 +114,26 @@ textarea:focus {
 }
 
 @media (max-width: 750px) {
-   
-    .border
-    {
+
+    .border {
         width: 95%;
     }
+
     .output.row {
         font-size: 1.2rem;
         width: 100%;
     }
 
 }
-@media (max-width: 270px)
-{
-    h1{
+
+@media (max-width: 270px) {
+    h1 {
         font-size: 1.8rem;
     }
 }
-@media (max-width: 200px)
-{
-    h1{
+
+@media (max-width: 200px) {
+    h1 {
         font-size: 1.4rem;
     }
 }
