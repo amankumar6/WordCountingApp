@@ -1,127 +1,173 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 html {
-    box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
-    background: url('img/32.-Banana-Mania.jpg');
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    font-family: 'Montserrat', sans-serif;
-    color: #111;
+  background: url("https://res.cloudinary.com/dbvthtwhc/image/upload/v1605201049/WordCountingApp/32.-Banana-Mania_bw3ubg.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: "Montserrat", sans-serif;
+  color: #000;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 .border {
-    width: 720px;
-    margin: 5% auto;
-    background: linear-gradient(-45deg, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000);
-    overflow: hidden;
-    background-size: 400% 400%;
-    position: relative;
-    animation: change 30s ease-in-out infinite;
-    border-radius: 10px;
-    box-shadow: 10px 10px 97px rgb(230, 230, 230);
+  width: 720px;
+  margin: 5% auto;
+  background: linear-gradient(-45deg, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000);
+  overflow: hidden;
+  background-size: 400% 400%;
+  position: relative;
+  -webkit-animation: change 30s ease-in-out infinite;
+          animation: change 30s ease-in-out infinite;
+  border-radius: 10px;
+  display: -ms-grid !important;
+  display: grid !important;
+  place-item: center !important;
+}
+
+@-webkit-keyframes change {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
 }
 
 @keyframes change {
-    0% {
-        background-position: 0 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0 50%;
-    }
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
 }
 
 .container_wc {
-    margin: 4px;
-    padding: 15px;
-    border-radius: 10px;
-    background-color: #FFFFFF;
-    -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
-    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  margin: 4px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
 }
 
-h1 {
-    font-size: 2.6rem;
-    font-weight: 800;
-    text-align: center;
-    margin: 1% 0 3%;
+.container_wc h1 {
+  font-size: 2.6rem;
+  font-weight: 800;
+  text-align: center;
+  margin: 1% 0 3%;
 }
 
-.output.row {
-    display: inline-grid;
-    width: 49.7%;
-    border: 1px solid #DDD;
-    font-size: 1.4rem;
-    margin: 1% 0;
-    background-color: #F9F9F9;
-    border-radius: 5px;
+.container_wc .output {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.output.row div {
-    display: inline-block;
-    padding: 10px 15px;
-    margin: 1%;
+.container_wc .output .row {
+  width: 49%;
+  font-size: 1.4rem;
+  margin: 1% 0;
+  background-color: #f9f9f9;
+  border-radius: 5px;
 }
 
-.output.row span {
-    font-weight: bold;
-    font-size: 1.5rem;
+.container_wc .output .row div {
+  display: inline-block;
+  padding: 10px 15px;
+  margin: 1%;
+}
+
+.container_wc .output .row span {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.container_wc a {
+  margin-top: 10px !important;
+  background: dodgerblue;
+}
+
+.container_wc a:hover {
+  background: rgba(30, 144, 255, 0.85);
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 510px) {
+  .output {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .output .row {
+    width: 100% !important;
+  }
 }
 
 @media (max-width: 750px) {
-
-    .border {
-        width: 95%;
-    }
-
-    .output.row {
-        font-size: 1.2rem;
-        width: 100%;
-    }
-
+  .border {
+    width: 95%;
+  }
+  .output .row {
+    font-size: 1.2rem;
+    width: 100%;
+  }
 }
 
 @media (max-width: 270px) {
-    h1 {
-        font-size: 1.8rem;
-    }
+  h1 {
+    font-size: 1.8rem;
+  }
 }
 
 @media (max-width: 200px) {
-    h1 {
-        font-size: 1.4rem;
-    }
+  h1 {
+    font-size: 1.4rem;
+  }
 }
 
-input:not([type]):focus:not([readonly])+label,
-input[type=text]:not(.browser-default):focus:not([readonly])+label,
-input[type=password]:not(.browser-default):focus:not([readonly])+label,
-input[type=email]:not(.browser-default):focus:not([readonly])+label,
-input[type=url]:not(.browser-default):focus:not([readonly])+label,
-input[type=time]:not(.browser-default):focus:not([readonly])+label,
-input[type=date]:not(.browser-default):focus:not([readonly])+label,
-input[type=datetime]:not(.browser-default):focus:not([readonly])+label,
-input[type=datetime-local]:not(.browser-default):focus:not([readonly])+label,
-input[type=tel]:not(.browser-default):focus:not([readonly])+label,
-input[type=number]:not(.browser-default):focus:not([readonly])+label,
-input[type=search]:not(.browser-default):focus:not([readonly])+label,
-textarea.materialize-textarea:focus:not([readonly])+label {
-    color: dodgerblue;
+input:not([type]):focus:not([readonly]) + label,
+input[type=text]:not(.browser-default):focus:not([readonly]) + label,
+input[type=password]:not(.browser-default):focus:not([readonly]) + label,
+input[type=email]:not(.browser-default):focus:not([readonly]) + label,
+input[type=url]:not(.browser-default):focus:not([readonly]) + label,
+input[type=time]:not(.browser-default):focus:not([readonly]) + label,
+input[type=date]:not(.browser-default):focus:not([readonly]) + label,
+input[type=datetime]:not(.browser-default):focus:not([readonly]) + label,
+input[type=datetime-local]:not(.browser-default):focus:not([readonly]) + label,
+input[type=tel]:not(.browser-default):focus:not([readonly]) + label,
+input[type=number]:not(.browser-default):focus:not([readonly]) + label,
+input[type=search]:not(.browser-default):focus:not([readonly]) + label,
+textarea.materialize-textarea:focus:not([readonly]) + label {
+  color: dodgerblue;
 }
 
 input:not([type]):focus:not([readonly]),
@@ -137,7 +183,8 @@ input[type=tel]:not(.browser-default):focus:not([readonly]),
 input[type=number]:not(.browser-default):focus:not([readonly]),
 input[type=search]:not(.browser-default):focus:not([readonly]),
 textarea.materialize-textarea:focus:not([readonly]) {
-    border-bottom: 1px solid dodgerblue;
-    -webkit-box-shadow: 0 1px 0 0 dodgerblue;
-    box-shadow: 0 1px 0 0 dodgerblue;
+  border-bottom: 1px solid dodgerblue;
+  -webkit-box-shadow: 0 1px 0 0 dodgerblue;
+  box-shadow: 0 1px 0 0 dodgerblue;
 }
+/*# sourceMappingURL=style.css.map */

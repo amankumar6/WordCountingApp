@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap')
+
+$font: 'Montserrat', sans-serif
+$fontColor: #000
+$bg:  #f9f9f9
+$bgSecondary:  #f9f9f9
+$primary-color : dodgerblue
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: inherit
+
+html
+    box-sizing: border-box
+
+body
+    background: url('https://res.cloudinary.com/dbvthtwhc/image/upload/v1605201049/WordCountingApp/32.-Banana-Mania_bw3ubg.jpg')
+    background-attachment: fixed
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    font-family: $font
+    color: $fontColor
+    width: 100vw
+    overflow-x: hidden
+
+.border
+    width: 720px
+    margin: 5% auto
+    background: linear-gradient(-45deg, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000)
+    overflow: hidden
+    background-size: 400% 400%
+    position: relative
+    animation: change 30s ease-in-out infinite
+    border-radius: 10px
+    display: grid !important
+    place-item: center !important
+
+@keyframes change
+    0%
+        background-position: 0 50%
+
+    50%
+        background-position: 100% 50%
+
+    100%
+        background-position: 0 50%
+
+.container_wc
+    margin: 4px
+    padding: 15px
+    border-radius: 10px
+    background-color: $bg
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2)
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2)
+
+    h1
+        font-size: 2.6rem
+        font-weight: 800
+        text-align: center
+        margin: 1% 0 3%
+
+    .output
+        display: flex
+        justify-content: center
+        align-items: center
+        .row
+            width: 49%
+            font-size: 1.4rem
+            margin: 1% 0
+            background-color: $bgSecondary
+            border-radius: 5px
+            div
+                display: inline-block
+                padding: 10px 15px
+                margin: 1%
+            span
+                font-weight: bold
+                font-size: 1.5rem
+
+    a
+        margin-top: 10px !important
+        background: $primary-color
+        &:hover
+            background: rgba(30, 144, 255,0.85)
+            box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2)
+
+@media (max-width: 510px)
+    .output
+        flex-direction: column
+
+        .row
+            width: 100% !important
+
+@media (max-width: 750px)
+
+    .border
+        width: 95%
+
+    .output
+        .row
+            font-size: 1.2rem
+            width: 100%
+
+@media (max-width: 270px)
+    h1
+        font-size: 1.8rem
+
+@media (max-width: 200px)
+    h1
+        font-size: 1.4rem
+
+input:not([type]):focus:not([readonly])+label,
+input[type=text]:not(.browser-default):focus:not([readonly])+label,
+input[type=password]:not(.browser-default):focus:not([readonly])+label,
+input[type=email]:not(.browser-default):focus:not([readonly])+label,
+input[type=url]:not(.browser-default):focus:not([readonly])+label,
+input[type=time]:not(.browser-default):focus:not([readonly])+label,
+input[type=date]:not(.browser-default):focus:not([readonly])+label,
+input[type=datetime]:not(.browser-default):focus:not([readonly])+label,
+input[type=datetime-local]:not(.browser-default):focus:not([readonly])+label,
+input[type=tel]:not(.browser-default):focus:not([readonly])+label,
+input[type=number]:not(.browser-default):focus:not([readonly])+label,
+input[type=search]:not(.browser-default):focus:not([readonly])+label,
+textarea.materialize-textarea:focus:not([readonly])+label
+    color: $primary-color
+
+input:not([type]):focus:not([readonly]),
+input[type=text]:not(.browser-default):focus:not([readonly]),
+input[type=password]:not(.browser-default):focus:not([readonly]),
+input[type=email]:not(.browser-default):focus:not([readonly]),
+input[type=url]:not(.browser-default):focus:not([readonly]),
+input[type=time]:not(.browser-default):focus:not([readonly]),
+input[type=date]:not(.browser-default):focus:not([readonly]),
+input[type=datetime]:not(.browser-default):focus:not([readonly]),
+input[type=datetime-local]:not(.browser-default):focus:not([readonly]),
+input[type=tel]:not(.browser-default):focus:not([readonly]),
+input[type=number]:not(.browser-default):focus:not([readonly]),
+input[type=search]:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly])
+    border-bottom: 1px solid $primary-color
+    -webkit-box-shadow: 0 1px 0 0 $primary-color
+    box-shadow: 0 1px 0 0 $primary-color
