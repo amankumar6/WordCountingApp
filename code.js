@@ -12,5 +12,6 @@ document.querySelector('.btn').addEventListener('click', () => {
     characterCount.innerHTML = 0;
     wordCount.innerHTML = 0;
     input.value = null;
+    input.style.height = '45px';
     M.toast({ html: 'Reset' });
 });

@@ -32,7 +32,7 @@ body {
   position: relative;
   -webkit-animation: change 30s ease-in-out infinite;
           animation: change 30s ease-in-out infinite;
-  border-radius: 10px;
+  border-radius: 8px;
   display: -ms-grid !important;
   display: grid !important;
   place-item: center !important;
@@ -65,7 +65,7 @@ body {
 .container_wc {
   margin: 4px;
   padding: 15px;
-  border-radius: 10px;
+  border-radius: 8px;
   background-color: #f9f9f9;
   -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
