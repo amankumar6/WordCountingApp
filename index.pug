@@ -10,29 +10,58 @@ html(lang="en")
 
         link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css")
         script(src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js")
-        
+
         link(rel="stylesheet" type="text/css" href="style/style.css")
         link(rel="icon" href="https://res.cloudinary.com/dbvthtwhc/image/upload/v1612345001/WordCountingApp/icon.png" type="image/x-icon")
         title WORD COUNTING APP
-    
+
     body
-        .border.z-depth-5
-            .container_wc
-                h1 𝘞𝘖𝘙𝘋 𝘊𝘖𝘜𝘕𝘛𝘐𝘕𝘎 𝘈𝘗𝘗
-                .row(style="margin-bottom: 0px;")
-                    .input-field.col.s12
-                        textarea#txt-area.materialize-textarea
-                        label(for="textarea1").label Start Typing...
-                
-                .output
-                    .row.z-depth-2(style="margin-right: 1.5%")
-                        div Total Words: 
-                            span#wordCount 0
-                
-                    .row.z-depth-2
-                        div Total Characters: 
-                            span#characterCount 0
-                
-                a.waves-effect.waves-light.waves-blue.btn.right Reset
+
+        .container_wc.z-depth-4
+            p Word Counting app
+            .row.input
+                .input-field.col.s12
+                    textarea#txt-area.materialize-textarea
+                    label(for="textarea1").label Start Typing...
+
+            .output
+                .row.z-depth-2(style="margin-right: 1.5%")
+                    div Total Words: 
+                        span#wordCount 0
+
+                .row.z-depth-2
+                    div Total Characters: 
+                        span#characterCount 0
+
+            a.waves-effect.waves-light.waves-blue.btn.right Clear
+
+        .bubbles
+            span.two
+            span.one
+            span.three
+            span.four
+            span.five
+
+        .bubbles
+            span.two
+            span.one
+            span.three
+            span.four
+            span.five
+            
+        .bubbles
+            span.two
+            span.one
+            span.three
+            span.four
+            span.five
+            
+        .bubbles
+            span.two
+            span.one
+            span.three
+            span.four
+            span.five
+            
 
         script(src="code.js")
